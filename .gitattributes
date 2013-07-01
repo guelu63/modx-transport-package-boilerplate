@@ -1,0 +1,11 @@
+# Auto detect text files and perform LF normalization. When text is set to
+# "auto", the path is marked for automatic end-of-line normalization. If git
+# decides that the content is text, its line endings are normalized to LF on
+# checkin.
+# http://www.kernel.org/pub/software/scm/git/docs/gitattributes.html
+#
+# The fedora master branch has a .gitattributes file containing * text=auto,
+# which instructs git to detect text files, and normalize to LF at each commit.
+# https://wiki.duraspace.org/display/FCREPO/Git+Guidelines+and+Best+Practices#GitGuidelinesandBestPractices-ConfiguringgittoenforceLFnormalization
+
+* text=auto
