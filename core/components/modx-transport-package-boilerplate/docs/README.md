@@ -1,0 +1,2 @@
+MODx Package Readme
+===================
