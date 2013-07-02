@@ -1,8 +1,10 @@
-#MODx Transport Package Boilerplate#
+#MODx Site & Transport Package Boilerplate#
 
 ##Introduction##
 
-###What Is A Transport Package###
+###What? MODx? Transport Package?###
+
+[MODx][10] is a [Content Application Platform][11]. [What that means kinda depends on who you are][2].
 
 A [Transport Package][3] is a collection of objects and files that can be used
 to _"transport"_ data from one [MODx][2] installation to another; or even to
@@ -171,3 +173,5 @@ Below are the main folders and files in the build package. This wasn't absolutel
 [7]: http://rtfm.modx.com/display/revolution20/Installation
 [8]: http://rtfm.modx.com/display/revolution20/Server+Requirements
 [9]: http://rtfm.modx.com/display/revolution20/Package+Management
+[10]: http://modx.com/
+[11]: http://en.wikipedia.org/wiki/Web_application_framework
