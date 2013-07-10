@@ -15,14 +15,15 @@ $mtime = $mtime[1] + $mtime[0];
 $tstart = $mtime;
 set_time_limit(0);
 
-/* set package defines */
-define('PKG_NAME','MODx Transport Package Boilerplate');
-define('PKG_NAME_LOWER','modx-transport-package-boilerplate');
-define('PKG_VERSION','1.0');
-define('PKG_RELEASE','rc1');
+/* get root folder */
+$root = dirname(dirname(__FILE__)).'/';
+
+/* override with your own defines here (see build.config.sample.php) */
+require_once $root . 'config.core.php';
+require_once MODX_CORE_PATH . 'model/modx/modx.class.php';
+require_once dirname(__FILE__). '/includes/functions.php';
 
 /* set up some source defines */
-$root = dirname(dirname(__FILE__)).'/';
 $sources= array (
     'root' => $root,
     'build' => $root .'_build/',
@@ -44,11 +45,6 @@ $sources= array (
     'model' => $root.'core/components/'.PKG_NAME_LOWER.'/model/',
 );
 unset($root);
-
-/* override with your own defines here (see build.config.sample.php) */
-require_once $sources['build'] . 'build.config.php';
-require_once MODX_CORE_PATH . 'model/modx/modx.class.php';
-require_once dirname(__FILE__). '/includes/functions.php';
 
 /* open <pre> tag for formatting output */
 echo '<pre style="font-size: 0.8em;">';

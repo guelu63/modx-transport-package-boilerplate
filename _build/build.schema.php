@@ -15,12 +15,12 @@ $mtime = $mtime[1] + $mtime[0];
 $tstart = $mtime;
 set_time_limit(0);
 
-/* set package defines */
-define('PKG_NAME','MODx Transport Package Boilerplate');
-define('PKG_NAME_LOWER','modx-transport-package-boilerplate');
+/* get root folder */
+$root = dirname(dirname(__FILE__)).'/';
 
-require_once dirname(__FILE__).'/build.config.php';
-include_once MODX_CORE_PATH . 'model/modx/modx.class.php';
+/* override with your own defines here (see build.config.sample.php) */
+require_once $root . 'config.core.php';
+require_once MODX_CORE_PATH . 'model/modx/modx.class.php';
 
 /* open <pre> tag for formatting output */
 echo '<pre style="font-size: 0.8em;">';

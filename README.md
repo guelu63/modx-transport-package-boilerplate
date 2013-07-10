@@ -63,7 +63,7 @@ _Ps: If MODx runs on your webserver you should be fine._
 ###Simplified###
 
 1. [Download the boilerplate from here][4].
-2. Setup the config file for the build script.
+2. Setup the config file for the build script. Samples for multiple OS' are included.
 3. Edit the content of the build package if you wish. This is optional, however 
    on initial download the build package contains nothing as this is just a 
    boilerplate. However for most, the code that has been commented out serves to
@@ -103,11 +103,6 @@ Below are the main folders and files in the build package. This wasn't absolutel
 │    ├── resolvers/
 │    │   └── resolve.example.php
 │    │
-│    ├── build.config.php
-│    ├── build.config.sample.linux.php
-│    ├── build.config.sample.mac.php
-│    ├── build.config.sample.linux.php
-│    ├── build.config.sample.windows.php
 │    ├── build.schema.php
 │    ├── build.transport.php
 │    └── setup.options.php
@@ -151,6 +146,10 @@ Below are the main folders and files in the build package. This wasn't absolutel
 │
 ├── .gitattributes
 ├── .gitignore
+├── config.core.sample.linux.php
+├── config.core.sample.mac.php
+├── config.core.sample.linux.php
+├── config.core.sample.windows.php
 ├── index.php
 └── README.md
 ```
